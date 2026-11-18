@@ -38,7 +38,7 @@ jobs:
           gradle-version: "8.9"
 
       - name: Build debug APK
-        run: gradle -p ProjectAurora_Android_Starter :app:assembleDebug --no-daemon
+        run: gradle -p ProjectAurora_Android_Starter :app:assembleDebug --no-daemon --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
